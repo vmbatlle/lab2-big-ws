@@ -10,7 +10,6 @@ import org.springframework.scheduling.annotation.AsyncResult;
 import org.springframework.util.StringUtils;
 
 import java.io.IOException;
-import java.net.URLEncoder;
 import java.util.Scanner;
 
 import translator.domain.LanguageSourceTarget;
