@@ -25,7 +25,7 @@ abstract class TranslatorImpl implements Translator {
   @Async
   public AsyncResult<String> translate(LanguageSourceTarget languageSourceTarget, String text) {
     try {
-      String encodedText = URLEncoder.encode(text, ENCODING_UTF_8);
+      String encodedText = text;
       String from = languageSourceTarget.getSource().asStr();
       String to = languageSourceTarget.getTarget().asStr();
       return new AsyncResult<>(translateInternal(from, to, text, encodedText));

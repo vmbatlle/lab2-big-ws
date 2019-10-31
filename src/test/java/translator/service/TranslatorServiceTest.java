@@ -20,9 +20,20 @@ public class TranslatorServiceTest {
   TranslatorService translatorService;
 
   @Test
-  public void translateTest() {
+  public void translateTestEnEs() {
     TranslatedText translatedText = translatorService.translate("en", "es", "This is a test of translation service");
     assertEquals("Esto es una prueba de servicio de traducción", translatedText.getTranslation());
   }
 
+  @Test
+  public void translateTestEsEn() {
+    TranslatedText translatedText = translatorService.translate("es", "en", "Esto es una prueba de servicio de traducción");
+    assertEquals("This is a test of translation service", translatedText.getTranslation());
+  }
+
+  @Test
+  public void translateTestDeEs() {
+    TranslatedText translatedText = translatorService.translate("de", "es", "Dies ist ein test des übersetzungsdienst");
+    assertEquals("Esto es una prueba de traducción", translatedText.getTranslation());
+  }
 }
