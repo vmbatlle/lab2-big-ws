@@ -13,4 +13,4 @@ Therefore, you must ensure that you runs this code with JDK 8.
 | NIA    | User name | Repo | Build Status | What was explored | Review for :gift: | Score
 |--------|-----------|------|--------------|-------------------|----------------------|--------
 |740388  | Diego Royo Meneses | [Test Branch](https://github.com/diegoroyo/lab2-big-ws/tree/test)    | [![Build Status](https://travis-ci.org/diegoroyo/lab2-big-ws.svg?branch=test)](https://travis-ci.org/diegoroyo/lab2-big-ws/tree/test)| Added tests for new languages (Spanish -> Polish, English -> Russian) |                      |
-       
+|721529  | Jorge Fernández Muñoz | [Test Branch](https://github.com/jorge97fernandez/lab2-big-ws/tree/test)    | [![Build Status](https://travis-ci.org/jorge97fernandez/lab2-big-ws.svg?branch=test)](https://travis-ci.org/jorge97fernandez/lab2-big-ws/tree/test)| Added tests for new languages (Spanish -> Basque, Spanish -> Italian) |                      |       
