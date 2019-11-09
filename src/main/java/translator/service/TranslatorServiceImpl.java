@@ -11,13 +11,15 @@ import translator.domain.TranslatedText;
 import translator.domain.Translator;
 import translator.exception.TranslatorException;
 
+import org.springframework.beans.factory.annotation.Qualifier;
+
 @Service
 public class TranslatorServiceImpl implements TranslatorService {
 
   private final Translator translator;
 
   @Autowired
-  public TranslatorServiceImpl(Translator translator) {
+  public TranslatorServiceImpl(@Qualifier("roundRobinTranslator") Translator translator) {
     this.translator = translator;
   }
 

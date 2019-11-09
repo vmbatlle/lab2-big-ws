@@ -37,6 +37,10 @@ public class YandexTranslator extends TranslatorImpl {
     }
   }
 
+  public void setApiKey(String apiKey) {
+    this.apiKey = apiKey;
+  }
+
 }
 
 class YandexResponse {
